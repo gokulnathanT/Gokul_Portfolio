@@ -1,38 +1,190 @@
 .App {
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-image: radial-gradient(circle, #3A6D8C 20%, #001F3F 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  z-index: 3;
+  border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1, p {
+  color: rgb(255, 255, 255);
+}
+
+/* Button styling */
+.button_own {
+  position: relative;
+  height: 30px;
+  width: 100px;
+  padding: 0 30px;
+  border: 2px solid #000;
+  background: #e8e8e8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: inherit;
+}
+
+.button_own:before, .button_own:after {
+  content: "";
+  position: absolute;
+  background: #e8e8e8;
+  transition: all .2s linear;
+}
+
+.button_own:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+
+.button_own:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+
+.button_own:hover {
+  cursor: crosshair;
+}
+
+.button_own:active {
+  transform: scale(0.95);
+}
+
+.button_own:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+
+.button_own:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+.button_own span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+}
+
+/* Center content container */
+.home_content, .img1_container {
+  width: 50%;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+.img1_container {
+  display: flex;
+  justify-content: center;
+}
+
+.home_base {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.home_text_1 {
+  font-size: 0.9em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  width: 80%;
+  max-width: 800px;
+  /* text-align: center; */
+  justify-content: center;
+  padding-right: 25px ;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  z-index: 10;
+  margin: 0 auto;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur;
+
+
+}
+
+.home_text{
+ padding-left: 55px;
+}
+.home_div_1 {
+  background-color: #000000;
+  max-width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  z-index: 20; /* Ensures main content is above particles */
 }
 
-.App-link {
-  color: #61dafb;
+.particles-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Places particles behind content */
+  pointer-events: none; /* Allows clicks to pass through particles */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .home_div_1 {
+    padding: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .image {
+    width: 140%;
+    height: auto;
+  }
+
+  .button_container {
+    align-items: center;
+  }
+
+  .home_base {
+    
+    flex-direction: column;
+  }
+
+  .home_content, .home_main_content {
+    width: 300px;
+    text-align: center;
+  }
+  .home_text_1{
+    align-items: center;
+    padding-left: 30px;
+    width: 80%;
+  }
+  .home_text{
+    padding-left: 0;
   }
 }
