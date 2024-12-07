@@ -1,0 +1,123 @@
+.projects {
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  background-color: #000000;
+  font-family: "Abel", sans-serif;
+}
+.projects h3 {
+  margin: 30px;
+  background-color: #257180;
+  width: fit-content;
+  font-family: "roboto", sans-serif;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-left: 5px solid #3baec5;
+}
+.projectTop {
+  position: sticky;
+  top: 0px;
+  left: 10px;
+  padding: 10px;
+  background-color: #000000;
+}
+.projectCards {
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+.projectContent-top {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectContent-desc {
+  flex: 3;
+}
+
+.projectContent-desc p {
+  text-align: justify;
+}
+
+.projectContent a {
+  padding: 3px 15px;
+  width: fit-content;
+  height: fit-content;
+  bottom: 2px;
+  background-color: #257180;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+  color: white;
+  border-radius: 2px;
+}
+.projectTechs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.projectTechs {
+  text-align: center;
+}
+.techs {
+  padding: 1px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #43cde9;
+}
+.projectView {
+  display: flex;
+  flex: 1;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+  padding: 10px;
+  padding-top: 20px;
+}
+.card {
+  display: flex;
+  width: 70%;
+  border: 1px solid #257180;
+  border-radius: 10px;
+}
+.projectImg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectContent {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+}
+.projectContent-top h5 {
+  padding: 3px;
+  padding-right: 5px;
+  border-right: 2px solid #257180;
+  border-bottom: 2px solid #257180;
+}
+
+@media (max-width: 768px) {
+  .projectCards {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .projectImg img {
+    padding: 10px;
+  }
+}
