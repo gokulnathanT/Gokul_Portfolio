@@ -29,16 +29,19 @@
   flex-direction: row;
 }
 .homeText h3{
-  font-size: medium;
+  font-size: 14px;
   border: 0.5px solid #257180;
   padding: 4px;
   border-right:5px solid #257180 ;
+}
+.homeText h1{
+  font-size: 29px;
 }
 .homeText-sub {
  position: absolute;
  bottom: 5px;
  right: 20px;
-  cursor: pointer;
+ cursor: pointer;
 }
 .homeText h4{
   background-color: #a1c4d2;
@@ -49,7 +52,7 @@
 }
 .homeText-l {
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -92,7 +95,7 @@ button{
   .homeText h1,h3,h4{
     font-size: small;
   }
-  .homeText h1{
+  /* .homeText h1{
     text-align: center;
-  }
+  } */
 }
