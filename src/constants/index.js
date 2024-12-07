@@ -55,7 +55,7 @@ export const PROJECTS = [
     title: "Xpace - Logistic optimization",
     image: pro4,
     description:
-      "A comprehensive solution for fleet management and monetizing un-utilized spaces by integrating 3rd party logistics. ",
+      "Efficient fleet management and monetizing un-utilized spaces by integrating 3LP. ",
     technologies: ["React.js", "MySQL", "CSS", "HTML", "Framer Motion"],
     link: "https://github.com/gokulnathanT?tab=repositories/",
   },
