@@ -4,7 +4,7 @@ import {ABOUT} from "../../constants";
 import "./About.css";
 import "../../index.css"
 
-import img5 from "../../assets/img_1.JPG";
+import img5 from "../../assets/gokul4.png";
 const About = () => {
   return (
     <div className="about">
