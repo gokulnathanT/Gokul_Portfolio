@@ -1,9 +1,21 @@
 import { PROJECTS } from "../../constants";
+import {useState} from "react";
 import "./Projects.css";
 function Project() {
+
+
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 100) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
   return (
     <div className="projects">
-      <div className="projectTop">
+      <div className={color ? "projectTop" : "projectTopBlur"}>
         <h3>Projects</h3>
       </div>
       <div className="projectCards">

@@ -6,8 +6,22 @@
   align-items: center;
   gap: 20px;
   color: white;
-  background-color: #000000;
+   
+  background: linear-gradient(45deg,#000000,#0c2429,#000000);
+  background-size: 400% 400%;
+  animation: color 10s ease-in-out infinite;
   font-family: "Abel", sans-serif;
+}
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
 .projects h3 {
   margin: 15px;
@@ -19,11 +33,10 @@
   border-left: 5px solid #3baec5;
 }
 .projectTop {
-  position: sticky;
+ position:sticky;
   top: 0px;
   left: 10px;
   padding: 10px;
-  background-color: #000000;
 }
 .projectCards {
   display: grid;

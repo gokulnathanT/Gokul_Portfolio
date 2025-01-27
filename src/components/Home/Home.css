@@ -12,7 +12,21 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: linear-gradient(45deg,#000000,#0c2429,#000000);
+  background-size: 400% 400%;
+  animation: color 10s ease-in-out infinite;
   background-color: #000000;
+}
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
 .homeText {
   position: relative;
