@@ -1,12 +1,11 @@
 .projects {
   flex: 1;
-  height: 100vh;
+  height:calc(100vh);
   overflow-y: scroll;
   justify-content: center;
   align-items: center;
   gap: 20px;
   color: white;
-   
   background: linear-gradient(45deg,#000000,#0c2429,#000000);
   background-size: 400% 400%;
   animation: color 10s ease-in-out infinite;
@@ -24,7 +23,7 @@
   }
 }
 .projects h3 {
-  margin: 15px;
+  margin: 30px;
   background-color: #257180;
   width: fit-content;
   font-family: "roboto", sans-serif;
@@ -33,17 +32,19 @@
   border-left: 5px solid #3baec5;
 }
 .projectTop {
- position:sticky;
+  position:sticky;
   top: 0px;
   left: 10px;
+  backdrop-filter: blur(10px);
+  height: 60px;
+  z-index: 999; 
   padding: 10px;
 }
 .projectCards {
   display: grid;
-  row-gap: 10px;
+  row-gap: 25px;
+  margin-bottom: 160px;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
   place-items: center;
 }
 .projectContent-top {
@@ -66,6 +67,7 @@
   height: fit-content;
   bottom: 2px;
   background-color: #257180;
+  border: 1.5px solid white;
   text-decoration: none;
   font-family: "Abel", sans-serif;
   color: white;
@@ -82,6 +84,8 @@
   padding: 1px;
   margin-bottom: 10px;
   font-size: 12px;
+  border-radius: 10px;
+  
   font-weight: bold;
   color: #000000;
   background-color: #43cde9;
@@ -97,7 +101,7 @@
 }
 .card {
   display: flex;
-  width: 80%;
+  width: 65%;
   border: 1px solid #257180;
   border-radius: 10px;
 }

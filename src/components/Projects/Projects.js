@@ -15,7 +15,7 @@ function Project() {
   window.addEventListener("scroll", changeColor);
   return (
     <div className="projects">
-      <div className={color ? "projectTop" : "projectTopBlur"}>
+      <div className="projectTop">
         <h3>Projects</h3>
       </div>
       <div className="projectCards">

@@ -4,6 +4,7 @@ import pro1 from "../assets/project1.png";
 import pro2 from "../assets/project2.png";
 import pro3 from "../assets/project3.png";
 import pro4 from "../assets/project4.png";
+import pro5 from "../assets/project5.png";
 
 
 export const ABOUT =
@@ -67,5 +68,13 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["React.js", "CSS", "HTML", "Framer Motion"],
     link: "https://gokull-dev.netlify.app/",
+  },
+  {
+    title: "QTIX ",
+    image: pro5,
+    description:
+      "Qtix is an interactive questionnaire application that dynamically generates and summarizes user responses based on the session result.",
+    technologies: ["React.js","MySQL","Springboot","Java"],
+    link: "https://github.com/gokulnathanT/QTIX-Backend",
   },
 ];
