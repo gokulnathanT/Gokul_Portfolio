@@ -63,6 +63,7 @@
   border-radius: 5px;
   width:fit-content;
   padding: 5px 10px;
+ 
 }
 .homeText-l {
   justify-content: center;
@@ -91,7 +92,7 @@ button{
   gap: 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 800px){
   .homeText{
     flex-direction: column;
     width: 60%;
@@ -112,4 +113,12 @@ button{
   /* .homeText h1{
     text-align: center;
   } */
+}
+@media (max-width: 1024px) {
+  .homeText{
+    flex-direction: column;
+  }
+  .imgHome{
+    width: 45%;
+  }
 }

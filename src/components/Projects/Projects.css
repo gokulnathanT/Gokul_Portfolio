@@ -123,6 +123,9 @@
   border-right: 2px solid #257180;
   border-bottom: 2px solid #257180;
 }
+.projectImg img {
+    padding: 10px;
+  }
 
 @media (max-width: 768px) {
   .projectCards {
@@ -136,6 +139,14 @@
     flex-direction: column;
   }
   .projectImg img {
+    padding: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .card{
+    flex-direction: column;
+  }
+  .projectImg img{
     padding: 10px;
   }
 }
