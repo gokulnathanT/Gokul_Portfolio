@@ -6,7 +6,6 @@ const Cursor=()=>{
     useEffect(()=>{
         let posX=0,
         posY=0;
-        ;
         let mouseX=0,
         mouseY=0;
 
