@@ -49,19 +49,19 @@
   padding: 3px;
   width: fit-content;
 }
-.techs {
-  background-color: rgb(17, 89, 116);
-  padding: 2px;
-  margin-right: 6px;
-  border-radius: 2px;
-  color: #000;
+.abt-l-content-bottom-exp-desc .techs {
+  background-color: rgb(35, 135, 171);
+  margin-right: 10px;
+  border-radius: 4px;
+  padding : 3px;
+  color: #000000;
 }
 .abtContainer-l-content-top h4 {
   background-color: #257180;
   width: fit-content;
   padding: 2px 5px;
   border-radius: 5px;
-  border-left: 5px solid #3baec5;
+  border-left: 5px solid hsl(190, 54%, 50%);
 }
 .aboutText {
   margin-bottom: 40px;

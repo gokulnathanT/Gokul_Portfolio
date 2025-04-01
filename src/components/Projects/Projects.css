@@ -71,7 +71,11 @@
   text-decoration: none;
   font-family: "Abel", sans-serif;
   color: white;
-  border-radius: 2px;
+}
+
+.projectContent a:hover{
+  background-color: white;
+  color: #257180;
 }
 .projectTechs {
   display: grid;
@@ -80,15 +84,15 @@
 .projectTechs {
   text-align: center;
 }
-.techs {
+.projectContent .techs {
   padding: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
   font-size: 12px;
-  border-radius: 10px;
-  
-  font-weight: bold;
+  border-radius: 5px;
   color: #000000;
   background-color: #43cde9;
+
 }
 .projectView {
   display: flex;

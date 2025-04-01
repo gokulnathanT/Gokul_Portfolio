@@ -56,6 +56,9 @@
   width: 100px;
   height: 100%;
 }
+.link-container img:hover{
+  opacity:0.9
+}
 
 @media (max-width: 768px) {
   .links-content {

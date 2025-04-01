@@ -1,5 +1,6 @@
 import "./Links.css";
 import img1 from "../../assets/Folder.png";
+import {Download} from "lucide-react";
 function Links() {
   return (
     <div className="links">
@@ -71,13 +72,11 @@ function Links() {
         </div>
         <div className="link-container">
           <a
-            href="https://www.instagram.com/_gokul_._._/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/resume.pdf" download="Gokulnathan_Resume.pdf"
           >
-            <img src={img1} alt="instagram" />
+            <img src={img1} alt="resume" />
           </a>
-          <p>Instagram</p>
+          <p>Resume</p>
         </div>
         <div className="link-container">
           <a

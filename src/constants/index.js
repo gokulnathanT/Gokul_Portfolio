@@ -12,10 +12,10 @@ export const ABOUT =
 
 export const EXPERIENCES = [
   {
-    year: "2024  November - Present",
+    year: "2024  November - 2025 January",
     role: "Project Intern",
     company: "SkillcheckrAI",
-    description: `Contributing to the development of a dynamic web application using React.js. Focused on creating responsive, user-friendly interfaces, and collaborating with team members through GitHub for version control and efficient code management. Gaining hands-on experience in frontend development within a fast-paced startup environment.`,
+    description: `Built scalable web app with React.js, focusing on user-friendly designs. Collaborated using GitHub for version control, supporting the project's growth`,
     technologies: ["React.js", "GitHub", "JavaScript", "HTML", "CSS"],
   },
   {
