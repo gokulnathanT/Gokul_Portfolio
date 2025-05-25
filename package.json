@@ -11,6 +11,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.9.0",
+    "firebase": "^11.8.1",
     "framer-motion": "^11.13.1",
     "gsap": "^3.12.7",
     "lucide-react": "^0.486.0",

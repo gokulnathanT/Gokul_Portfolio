@@ -1,10 +1,23 @@
 import { useNavigate } from "react-router-dom";
 import img1 from "../../assets/gokul_pic.jpeg";
 import { motion } from "framer-motion";
+import React,{useEffect,useState} from "react";
+import { recordUniqueView } from "../../utils/recordView";
+import { getViewerCount } from "../../utils/getViewerCount";
 
 import "./Home.css";
 const Home = () => {
   const navigate = useNavigate();
+  const [viewerCount, setViewerCount] = useState(0);
+
+  useEffect(()=>{
+    const run= async ()=>{
+      await recordUniqueView();
+      const count= await getViewerCount();
+      setViewerCount(count);
+    };
+    run();
+  },[]);
 
   function handleClick() {
     navigate("/About");
@@ -24,6 +37,9 @@ const Home = () => {
   });
   return (
     <div className="homeContent">
+      <div className="viewCount">
+        <p>views 👽 : {viewerCount}</p>
+      </div>
       <div className="homeText">
         <motion.div
           className="homeText-r"
@@ -31,7 +47,6 @@ const Home = () => {
           initial="initial"
           animate="animate"
         >
-          
           <img className="imgHome" src={img1} alt="Logo Image" />
         </motion.div>
         <div className="homeText-l">
