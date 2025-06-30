@@ -14,9 +14,7 @@ const About = () => {
             <h4>ABOUT ME</h4>
           </div>
           <div className="aboutContainer-l-content-bottom">
-            <p className="aboutText">
-             {ABOUT}!
-            </p>
+            <p className="aboutText">{ABOUT}!</p>
             <hr />
             <h4>Experience </h4>
             <div className="abt-l-content-bottom-exp">
@@ -29,7 +27,10 @@ const About = () => {
                     <h5>
                       {experience.role} - {experience.company}
                     </h5>
-                    <p>{experience.description}</p>
+                    <ul>
+                      <li>{experience.description1}</li>
+                      <li>{experience.description2}</li>
+                    </ul>
                     {experience.technologies.map((tech, index) => (
                       <span className="techs">{tech}</span>
                     ))}
@@ -42,14 +43,14 @@ const About = () => {
             <h4>President ~ Ultronix </h4>
             <p className="abt-l-content-bottom-pres">
               As the President of Ultronix, a technical student association, I
-              led a dynamic student force and organized several key initiatives to
-              promote technical knowledge and collaboration. My contributions
+              led a dynamic student force and organized several key initiatives
+              to promote technical knowledge and collaboration. My contributions
               focused on team building, event management, and enhancing the
               technical skills of members through various workshops and
               sessions.
             </p>
             <p>Organized ~</p>
-            <ul >
+            <ul>
               <li>8+ Technical Events</li>
               <li>2 Workshops</li>
             </ul>
