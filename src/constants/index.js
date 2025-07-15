@@ -53,7 +53,7 @@ export const PROJECTS = [
     image: pro5,
     description:
       "Qtix is an intelligent DSA interview simulator that leverages voice interaction and AI-driven question flow, generating real-time summaries for effective self-assessment and progress tracking.",
-    technologies: ["Gemini AI","Firebase","React.js", "MySQL", "Springboot", "Java"],
+    technologies: ["Gemini AI","Firebase","React.js", "Springboot", "Java"],
     link: "https://github.com/gokulnathanT/QTIX-Backend",
   },
 ];
