@@ -29,15 +29,15 @@ export const PROJECTS = [
     image: pro4,
     description:
       "Efficient fleet management and monetizing un-utilized spaces by integrating 3LP. ",
-    technologies: ["Springboot","Spring Security","React.js", "MySQL"],
-    link: "https://github.com/gokulnathanT?tab=repositories/",
+    technologies: ["Springboot", "Spring Security", "React.js", "MySQL"],
+    link: "https://github.com/gokulnathanT/Xpace_Backend/",
   },
   {
     title: "Memora CLI - A productivity toolkit",
     image: pro1,
     description:
       "Command Line Interface Assistant for Organizing, Tracking, Scheduling, and Managing daily activities. ",
-    technologies: ["SpringBoot","React.js", "MySQL"],
+    technologies: ["SpringBoot", "React.js", "MySQL"],
     link: "https://github.com/gokulnathanT/CL-Interface-Memora",
   },
   {
@@ -45,15 +45,15 @@ export const PROJECTS = [
     image: pro3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["React.js", "CSS", "HTML", "Framer Motion"],
+    technologies: ["React.js","Firebase" ,"CSS", "HTML", "Framer Motion"],
     link: "https://gokull-dev.netlify.app/",
   },
   {
     title: "QTIX ",
     image: pro5,
     description:
-      "Qtix is an interactive questionnaire application that dynamically generates and summarizes user responses based on the session result.",
-    technologies: ["React.js", "MySQL", "Springboot", "Java"],
+      "Qtix is an intelligent DSA interview simulator that leverages voice interaction and AI-driven question flow, generating real-time summaries for effective self-assessment and progress tracking.",
+    technologies: ["Gemini AI","Firebase","React.js", "MySQL", "Springboot", "Java"],
     link: "https://github.com/gokulnathanT/QTIX-Backend",
   },
 ];
