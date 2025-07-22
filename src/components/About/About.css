@@ -56,6 +56,10 @@
   padding : 3px;
   color: #000000;
 }
+.abt-l-content-bottom-exp-desc li{
+  width: 90%;
+  text-align: justify;
+}
 .abtContainer-l-content-top h4 {
   background-color: #257180;
   width: fit-content;
@@ -200,10 +204,11 @@ span {
   letter-spacing: 0.5px;
   line-height: 25px;
 }
-.aboutContainer-l-content-bottom p {
+.aboutContainer-l-content-bottom p  {
   width: 90%;
   text-align: justify;
 }
+
 .aboutContainer-l h2 {
   background-color: #257180;
   width: fit-content;
